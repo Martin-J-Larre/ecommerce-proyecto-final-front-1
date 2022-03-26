@@ -6,11 +6,11 @@ import { ShoppingCartOutlined } from '@material-ui/icons';
 
 
 const Container = styled.div`
-    height: 60px;
+    height: 50px;
 `
 
 const Spacing = styled.div`
-    padding: 20px 40px;
+    padding: 0px 40px;
     display: flex;   
     align-items: center;
     justify-content: space-between;
