@@ -91,13 +91,13 @@ const Carousel = () => {
             </Arrow>
             <Wraper sliderIndex={sliderIndex}>
                 {sliderItems.map((item) =>(
-                <Slider>
+                <Slider key={ item.id }>
                     <ImgContainer>
-                        <Image src={item.img}/>
+                        <Image src={ item.img }/>
                     </ImgContainer>
                     <InfoContainer>
-                        <Title>{item.title}</Title>
-                        <Description>{item.description}</Description>
+                        <Title>{ item.title }</Title>
+                        <Description>{ item.description }</Description>
                         <Button>SHOW NOW</Button>
                     </InfoContainer>
                 </Slider>
