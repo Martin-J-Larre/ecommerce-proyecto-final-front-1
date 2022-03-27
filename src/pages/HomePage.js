@@ -1,6 +1,7 @@
 
 import React from 'react'
 import Carousel from '../components/Carousel';
+import Categories from '../components/Categories';
 import Navbar from '../components/Navbar';
 import Promo from '../components/Promo';
 
@@ -12,6 +13,7 @@ const HomePage = () => {
         <Promo />
         <Navbar />
         <Carousel />
+        <Categories />
         </>
     )
 }
