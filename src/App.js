@@ -2,7 +2,9 @@
 // import ProductList from './pages/ProductList';
 // import ProductPage from "./pages/ProductPage";
 
-import Register from "./pages/RegisterPage";
+import Login from "./pages/LoginPage";
+
+// import Register from "./pages/RegisterPage";
 
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
     // <HomePage />
     // <ProductList />
     // <ProductPage />
-    <Register />
+    // <Register />
+      <Login />
   );
 }
 
