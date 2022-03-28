@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import { mobileResposive } from "../responsive";
+import styled from "styled-components";
 
 const Container = styled.div`
     width: 100vw;
@@ -19,6 +20,9 @@ const Wrapper = styled.div`
     width: 40%;
     padding: 20px;
     background-color: #fff; 
+    ${mobileResposive({
+        width: "80%"
+    })}
 `
 const Title = styled.h1`
     text-align: center; 

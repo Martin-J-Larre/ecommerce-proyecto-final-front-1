@@ -1,4 +1,4 @@
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/HomePage';
 // import ProductList from './pages/ProductList';
 // import ProductPage from "./pages/ProductPage";
 // import Login from "./pages/LoginPage";
@@ -11,12 +11,12 @@ import CartPage from "./pages/CartPage";
 
 function App() {
   return (
-    <HomePage />
+    // <HomePage />
     // <ProductList />
     // <ProductPage />
     // <Register />
     // <Login />
-    // <CartPage />
+    <CartPage />
   );
 }
 

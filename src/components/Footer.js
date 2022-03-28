@@ -2,9 +2,13 @@ import { Facebook, Instagram, MailOutline, Phone, Room, Twitter, YouTube } from 
 import { FaCcMastercard, FaCcPaypal, FaCcVisa } from 'react-icons/fa';
 import { SiAmericanexpress } from 'react-icons/si';
 import styled from "styled-components"
+import { mobileResposive } from '../responsive';
 
 const FooterContainer = styled.div`
     display: flex;
+    ${mobileResposive({
+        flexDirection: 'column'
+    })}
     `
 const FooterLeft = styled.div`
     flex: 1;
@@ -12,13 +16,22 @@ const FooterLeft = styled.div`
     flex-direction: column;
     padding: 20px; 
 `
-const Logo = styled.h1``
+const Logo = styled.h1`
+${mobileResposive({
+    textAlign: "center",
+    fontSize: "24px"
+})}
+`
 
 const Desc = styled.p`
     margin: 20px 0px;
 `
 const SocialMediaContainer = styled.div`
     display: flex;
+    ${mobileResposive({
+        width: "100%",
+        justifyContent:'space-between'
+    })}
 `
 const IconContainer = styled.div`
     width: 40px;
@@ -35,9 +48,15 @@ const IconContainer = styled.div`
 const FooterCenter = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobileResposive({
+        display: "none"
+    })} 
 `
 const Title = styled.h3`
     margin-bottom: 30px;
+    ${mobileResposive({
+        textAlign: "center"
+    })}
 `
 const List = styled.ul`
     margin: 0;
@@ -54,6 +73,9 @@ const ListItem = styled.li`
 const FooterRight = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobileResposive({
+        backgroundColor: "#eee"
+    })}
 `
 
 const ContactItem = styled.div`
@@ -67,7 +89,11 @@ const Payment = styled.div`
     display: flex;
     justify-content: space-evenly;
     color: red;
-    font-size: 30px; 
+    font-size: 30px;
+    ${mobileResposive({
+        width: "100%",
+        marginLeft: "0"
+    })} 
 `
 
 const Footer = () => {

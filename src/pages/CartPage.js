@@ -1,3 +1,4 @@
+import { mobileResposive } from "../responsive";
 import styled from "styled-components";
 import Promo from "../components/Promo";
 import Navbar from "../components/Navbar";
@@ -8,6 +9,9 @@ const Container = styled.div``
 
 const Wrapper = styled.div`
     padding: 20px;
+    ${mobileResposive({
+        padding: "10px"
+    })}
 `
 const Title = styled.h1`
     font-weight: 300; 
@@ -27,7 +31,11 @@ const AboveButton = styled.button`
     background-color: ${props=>props.type === "filled" ? "black" : "transparent"};
     color: ${props=>props.type === "filled" && "white"};
 `
-const AboveTextContainer = styled.div``
+const AboveTextContainer = styled.div`
+    ${mobileResposive({
+        display: "none"
+    })}
+`
 
 const AboveText = styled.span`
     text-decoration: underline;
@@ -36,14 +44,20 @@ const AboveText = styled.span`
 `
 const BelowContainer = styled.div`
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    ${mobileResposive({
+        flexDirection: "column"
+    })} 
 `
 const Info = styled.div`
     flex:3;
 `
 const ProductContainer = styled.div`
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    ${mobileResposive({
+        flexDirection: "column"
+    })} 
 `
 const ProductDetail = styled.div`
     flex:2;
@@ -89,10 +103,16 @@ const ProductQuantityContainer = styled.div`
 const ProductQuantity = styled.div`
     font-size: 24px;
     margin: 5px; 
+    ${mobileResposive({
+        margin: "5px 15px"
+    })}
 `
 const ProductPrice = styled.div`
     font-size: 30px;
-    font-weight: 200;  
+    font-weight: 200;
+    ${mobileResposive({
+        marginBottom: "20px"
+    })}  
 `
 const Hr = styled.hr`
     background-color: #eee;

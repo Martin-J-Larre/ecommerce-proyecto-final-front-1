@@ -1,3 +1,4 @@
+import { mobileResposive } from "../responsive";
 import styled from "styled-components";
 import Promo from '../components/Promo';
 import Navbar from '../components/Navbar';
@@ -10,6 +11,11 @@ const Container = styled.div`
 const Wrapper = styled.div`
     padding: 50px;
     display: flex;
+    ${mobileResposive({
+        marginTop: "20px",
+        padding: "10px",
+        flexDirection: "column"
+    })}
 `
 const ImgContainer = styled.div`
     flex: 1;
@@ -18,13 +24,22 @@ const Image = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover; 
+    ${mobileResposive({
+        height: "40vh"
+    })}
 `
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${mobileResposive({
+        padding: "10px"
+    })}
 `
 const Title = styled.h1`
     font-weight: 200;
+    ${mobileResposive({
+        textAlign: "center"
+    })}
 `
 const Desc = styled.p`
     margin: 20px 0px;
@@ -38,6 +53,9 @@ const FilterContainer = styled.div`
     margin: 30px 0px;
     display: flex;
     justify-content: space-between;
+    ${mobileResposive({
+        width: "100%"
+    })}
 `
 const FilterProduct = styled.div`
     display: flex;
@@ -68,11 +86,17 @@ const AddContainer = styled.div`
     align-content: center;
     justify-content: space-between;
     width: 50%; 
+    ${mobileResposive({
+        width: "100%"
+    })}
 `
 const QuantityContainer = styled.div`
     display: flex;
     align-items: center;
     font-weight: 700;
+    ${mobileResposive({
+        marginLeft: "25px"
+    })}
 
 `
 const Quantity = styled.span`

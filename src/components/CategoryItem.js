@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobileResposive } from "../responsive"
 
 
 const Container = styled.div`
@@ -11,6 +12,9 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ${mobileResposive({
+        height:"25vh"
+    })} 
     
 `
 const Info = styled.div`
